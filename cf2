@@ -1,0 +1,17 @@
+a = list (map (int, input ().split ()))
+d1 = a[0]
+d2 = a[1]
+
+if (min(d1, d2) == 1) and (max(d1, d2)==9) :
+    print (99, 100)
+
+elif (abs(d1-d2) == 1) :
+    print (min(d1, d2), max(d1, d2))
+
+elif (d1-d2 == 0) :
+    d11 = str(d1) + "1"
+    d22 = str(d2) + "2"
+    print (d11, d22)
+
+else :
+    print (-1)
